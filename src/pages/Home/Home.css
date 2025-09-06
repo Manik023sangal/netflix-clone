@@ -1,0 +1,153 @@
+.hero{
+    height: 100vh;
+    width: 100%;
+    background: url('../../assets/hero.jpg') center center/cover no-repeat;
+    position: relative;
+}
+
+.banner-img{
+    width: 100%;
+    mask-image: linear-gradient(to right, transparent, black 75%);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 75%);
+}
+
+.hero-caption{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding-left: 6%;
+}
+
+.caption-img{
+    width: 90%;
+    max-width: 420px;
+    margin-bottom: 30px;
+}
+
+.hero-caption p{
+    max-width: 700px;
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+
+.hero-buttons{
+    display: flex;
+    gap: 15px;
+    margin-bottom: 50px;
+}
+
+.hero-buttons .btn img{
+    width: 25px;
+}
+
+.hero-buttons .btn{
+    border: 0;
+    outline: 0;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 20px;
+    background: white;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    transition: 0.3s ease-in-out;
+}
+
+.hero-buttons .btn.dark-btn{
+    color: #fff;
+    background: #6d6d6eb3;
+}
+
+.hero-buttons .btn:hover{
+    background: #ffffffbf;
+}
+
+.hero-buttons .btn.dark-btn:hover{
+    background: #6d6d6e66;
+}
+
+@media (max-width: 1024px) {
+    .hero-caption .title-cards{
+        padding-left: 4%;
+    }
+
+    .caption-img{
+        width: 100%;
+        max-width: 300px;
+        margin-bottom: 20px;
+    }
+
+    .hero-caption p{
+        font-size: 14px;
+        max-width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .hero-buttons{
+        margin-bottom: 30px;
+    }
+
+    .hero-buttons .btn img{
+        width: 20px;
+    }
+}
+
+@media (max-width: 800px){
+    .hero-caption{
+        padding-left: 4%;
+        bottom: 20px;
+    }
+
+    .caption-img{
+        width: 50%;
+        max-width: 300px;
+        margin-bottom: 10px;
+    }
+
+    .hero-caption p{
+        font-size: 13px;
+        padding-left: 4%;
+        margin-bottom: 10px;
+    }
+
+    .hero-buttons .btn{
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+
+    .hero-buttons .btn img{
+        width: 20px;
+    }
+
+    .more-info{
+        padding-left: 4%;
+    }
+}
+
+@media (max-width: 500px){
+    .hero-caption{
+        padding-left: 2%;
+        bottom: 10px;
+    }
+
+    .caption-img{
+        display: none;
+    }
+
+    .hero-buttons .btn img{
+        width: 15px;
+    }
+
+    .hero-buttons .btn{
+        padding: 4px 10px;
+        gap: 5px;
+        font-size: 10px;
+    }
+
+    .more-info{
+        padding-left: 2%;
+    }
+}
